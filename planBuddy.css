@@ -1,0 +1,49 @@
+body {
+  padding: 20px;
+  width: 100lvw;
+  height: 100lvh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7%;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+#name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Segoe UI", sans-serif;
+}
+
+#add {
+  align-items: center;
+  background-color: #a5c9e9;
+}
+
+#logout {
+  text-align: center;
+  background-color: #a5c9e9;
+  color: black;
+  border-color: white;
+}
+
+#dialog-box {
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: rgb(94, 143, 242);
+}
+
+.content {
+  background-color: #a5c9e9;
+  width: 100%;
+  height: 90%;
+}
