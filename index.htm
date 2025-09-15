@@ -29,20 +29,25 @@
           <i class="fa-solid fa-plus"></i>
         </button>
       </div>
-      <button class="btn btn-primary logout" id="logout">Logout</button>
+      <button id="logout">Logout</button>
     </div>
     <hr />
-    <div class="content"></div>
-    <dialog id="dialog-box">
-      <h2>Add task</h2>
-      <label for="title">Title</label>
-      <input type="text" name="title" />
 
-      <label for="description">Description</label>
-      <textarea name="description"></textarea>
+    <div id="content"></div>
 
-      <button>ADD</button>
-      <button id="close">CLOSE</button>
+    <dialog id="dialog-box" style="border: none">
+      <button id="close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h2 id="task"><i class="fa-solid fa-circle-check"></i> Add Task</h2>
+      <br />
+      <label for="title">Title</label><br />
+      <input type="text" name="title" id="title" /><br /><br />
+
+      <label for="description">Description</label><br />
+      <textarea name="description" id="description"></textarea><br /><br />
+
+      <button id="addtask">ADD</button>
     </dialog>
 
     <script src="planBuddy.js"></script>
