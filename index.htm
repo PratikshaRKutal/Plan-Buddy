@@ -33,22 +33,55 @@
     </div>
     <hr />
 
-    <div id="content"></div>
+    <div id="content">
+      <div id="placeholder">
+      <h3>✨ Your task galaxy is empty!</h3>
+      <p>Plant your first star by clicking <b>+ Add</b>.</p>
+      </div>
+    </div>
 
     <dialog id="dialog-box" style="border: none">
+      <div id="dialog-content">
       <button id="close">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <h2 id="task"><i class="fa-solid fa-circle-check"></i> Add Task</h2>
-      <br />
+      <h2 id="task"><i class="fa-solid fa-circle-check"></i> Add Task</h2><br>
+      
       <label for="title">Title</label><br />
-      <input type="text" name="title" id="title" /><br /><br />
+      <input type="text" name="title" id="title" /><br /><br>
 
       <label for="description">Description</label><br />
-      <textarea name="description" id="description"></textarea><br /><br />
+      <textarea name="description" id="description"></textarea><br /><br>
 
       <button id="addtask">ADD</button>
+      </div>
     </dialog>
+
+    <dialog id="confirm-box">
+      <h3>Are you sure?</h3>
+
+      <div id="confirm-btns">
+      <button id="yesbtn">Yes</button>
+      <button id="nobtn">No</button>
+      </div>
+    </dialog>
+
+    <dialog id="edit-dialog" style="border: none">
+  <div id="edit-content">
+    <button id="edit-close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <h2 id="edit-task"><i class="fa-solid fa-pen-to-square"></i> Edit Task</h2><br>
+    
+    <label for="edit-title">Title</label><br />
+    <input type="text" name="edit-title" id="edit-title" /><br /><br>
+
+    <label for="edit-description">Description</label><br />
+    <textarea name="edit-description" id="edit-description"></textarea><br /><br>
+
+    <button id="save-edit">Save Changes</button>
+  </div>
+  </dialog>
 
     <script src="planBuddy.js"></script>
   </body>
