@@ -259,3 +259,50 @@ label {
   color: rgb(145, 144, 144);
   opacity: 0.7;
 }
+
+@media (max-width: 768px) {
+  #content {
+    justify-content: center;
+  }
+  #placeholder {
+    margin-top: 50px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  #logo {
+    height: 35px;
+    width: auto;
+  }
+
+  #name {
+    font-size: 16px;
+  }
+
+  #add, #logout {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  #dialog-box, #edit-dialog, #confirm-box {
+    width: 95%;
+  }
+
+  #title, #description, #edit-title, #edit-description {
+    width: 100%;
+  }
+}
+
