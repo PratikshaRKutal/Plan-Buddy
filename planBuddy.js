@@ -67,6 +67,7 @@ checkbox.addEventListener("change", (e) => {
 
   card.addEventListener("click", (e) => {
     if (e.target.closest(".delete-btn")) return;
+    if (e.target.closest(".task-check")) return;
     const cardTitle = card.querySelector("h2");
     const cardDesc = card.querySelector("p");
     editTitleInput.value = cardTitle.textContent;
