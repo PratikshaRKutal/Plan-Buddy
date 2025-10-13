@@ -25,7 +25,7 @@
       <div style="display: flex; gap: 20px; align-items: center">
         <img src="./logo.PNG" alt="Logo" id="logo" />
         <label for="logo" id="name">PlanBuddy</label>
-        <button class="btn" id="add">
+        <button class="add-btn" id="add">
           <i class="fa-solid fa-plus"></i>
         </button>
       </div>
@@ -36,7 +36,7 @@
     <div id="content">
       <div id="placeholder">
       <h3>✨ Your task galaxy is empty!</h3>
-      <p>Plant your first star by clicking <b>+ Add</b>.</p>
+      <p>Plant your first star by clicking <button id="add" class="add-btn">+ ADD</button></p>
       </div>
     </div>
 
@@ -83,6 +83,8 @@
   </div>
   </dialog>
 
-    <script src="planBuddy.js"></script>
+  <div id="congrats-message">🎉 Congratulations! Task added successfully! 🎉</div>
+
+  <script src="planBuddy.js"></script>
   </body>
 </html>
